@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2de2462ed4.js" crossorigin="anonymous"></script>
+
+    <title>Calculator - Challenge</title>
+  </head>
+  <body>
+    <main class="row calculator-body">
+
+      <!-- screen -->
+      <div class="col-12">
+        <input
+          readonly
+          class="calculator-body__screen"
+          name="output-screen"
+          id="output-screen"
+        >
+
+      </div>
+      <!-- buttons -->
+      <div class="row calculator-body__buttons-row">
+        <div class="col-3">
+          <button id="clear-btn" class="button--clear">
+            C
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="to-negative-btn" class="button--special-operation">
+            +/-
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="delete-one-character" class="button--special-operation">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="divide-btn" class="button--operation">
+            /
+          </button>
+        </div>
+      </div>
+
+      <div class="row calculator-body__buttons-row">
+        <div class="col-3">
+          <button id="seven-btn" class="button--number">
+            7
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="eight-btn" class="button--number">
+            8
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="nine-btn" class="button--number">
+            9
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="multiply-btn" class="button--operation">
+            x
+          </button>
+        </div>
+      </div>
+      
+      <div class="row calculator-body__buttons-row">
+        <div class="col-3">
+          <button id="four-btn" class="button--number">
+            4
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="five-btn" class="button--number">
+            5
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="six-btn" class="button--number">
+            6
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="minus-btn" class="button--operation">
+            -
+          </button>
+        </div>
+      </div>
+      
+      <div class="row calculator-body__buttons-row">
+        <div class="col-3">
+          <button id="one-btn" class="button--number">
+            1
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="two-btn" class="button--number">
+            2
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="three-btn" class="button--number">
+            3
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="plus-btn" class="button--operation">
+            +
+          </button>
+        </div>
+      </div>
+      
+      <div class="row calculator-body__buttons-row">
+        <div class="col-4">
+          <button id="zero-btn" class="button--zero">
+            0
+          </button>
+        </div>
+        <div class="col-2">
+          <button id="comma-btn" class="button--point">
+            ,
+          </button>
+        </div>
+        <div class="col-6">
+          <button id="equal-btn" class="button--equal">
+            =
+          </button>
+        </div>
+      </div>
+
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
