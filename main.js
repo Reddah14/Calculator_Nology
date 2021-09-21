@@ -17,21 +17,24 @@ const pressNumberBtn = (buttonNumber) => {
   displayScreen.value = displayScreen.value + buttonNumber;
 };
 
+const settingOperation = (printOperationParam, defineOperationParam) => {
+  displayScreen.value = printOperationParam;
+  defineOperation = defineOperationParam;
+};
+
 const pressOperationBtn = (operation) => {
   displayScreen.value = displayScreen.value.replace(",", ".");
   numA = parseFloat(displayScreen.value);
-  if (operation == "+") {
-    displayScreen.value = "+";
-    defineOperation = "sum";
-  } else if (operation == "-") {
-    displayScreen.value = "-";
-    defineOperation = "minus";
-  } else if (operation == "x") {
-    displayScreen.value = "x";
-    defineOperation = "multiply";
-  } else if (operation == "/") {
-    displayScreen.value = "/";
-    defineOperation = "divide";
+  if (operation === "+") {
+    settingOperation("+", "sum");
+  } else if (operation === "-") {
+    settingOperation("-", "minus");
+  } else if (operation === "x") {
+    settingOperation("x", "multiply");
+  } else if (operation === "/") {
+    settingOperation("/", "divide");
+  }
+};
   }
 };
 
