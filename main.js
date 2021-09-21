@@ -35,30 +35,40 @@ const pressOperationBtn = (operation) => {
     settingOperation("/", "divide");
   }
 };
+
+const executeOperation = (operationParam) => {
+  displayScreen.value = displayScreen.value.replace(",", ".");
+  numB = parseFloat(displayScreen.value);
+
+  switch (operationParam) {
+    case "+":
+      resultOperation = numA + numB;
+      break;
+    case "-":
+      resultOperation = numA - numB;
+      break;
+    case "*":
+      resultOperation = numA * numB;
+      break;
+    case "/":
+      resultOperation = numA / numB;
+      break;
+    default:
+      resultOperation = "ERR";
+      break;
   }
+  displayScreen.value = resultOperation;
 };
 
 const pressEqualBtn = () => {
   if (defineOperation == "sum") {
-    displayScreen.value = displayScreen.value.replace(",", ".");
-    numB = parseFloat(displayScreen.value);
-    resultOperation = numA + numB;
-    displayScreen.value = resultOperation;
+    executeOperation("+");
   } else if (defineOperation == "minus") {
-    displayScreen.value = displayScreen.value.replace(",", ".");
-    numB = parseFloat(displayScreen.value);
-    resultOperation = numA - numB;
-    displayScreen.value = resultOperation;
+    executeOperation("-");
   } else if (defineOperation == "multiply") {
-    displayScreen.value = displayScreen.value.replace(",", ".");
-    numB = parseFloat(displayScreen.value);
-    resultOperation = numA * numB;
-    displayScreen.value = resultOperation;
+    executeOperation("*");
   } else if (defineOperation == "divide") {
-    displayScreen.value = displayScreen.value.replace(",", ".");
-    numB = parseFloat(displayScreen.value);
-    resultOperation = numA / numB;
-    displayScreen.value = resultOperation;
+    executeOperation("/");
   }
 };
 
