@@ -13,20 +13,17 @@
   <body>
     <main class="row calculator-body">
 
-      <!-- screen -->
       <div class="col-12">
         <input
           readonly
           class="calculator-body__screen"
           name="output-screen"
           id="output-screen"
-        >
-
+        />
       </div>
-      <!-- buttons -->
       <div class="row calculator-body__buttons-row">
         <div class="col-3">
-          <button id="clear-btn" class="button--clear">
+          <button id="clear-btn" class="button--clear" onclick="pressClearBtn()">
             C
           </button>
         </div>
@@ -41,7 +38,7 @@
           </button>
         </div>
         <div class="col-3">
-          <button id="divide-btn" class="button--operation">
+          <button id="divide-btn" class="button--operation" onclick="pressOperationBtn('/')">
             /
           </button>
         </div>
@@ -49,22 +46,22 @@
 
       <div class="row calculator-body__buttons-row">
         <div class="col-3">
-          <button id="seven-btn" class="button--number">
+          <button id="seven-btn" class="button--number" onclick="pressNumberBtn(7)">
             7
           </button>
         </div>
         <div class="col-3">
-          <button id="eight-btn" class="button--number">
+          <button id="eight-btn" class="button--number" onclick="pressNumberBtn(8)">
             8
           </button>
         </div>
         <div class="col-3">
-          <button id="nine-btn" class="button--number">
+          <button id="nine-btn" class="button--number" onclick="pressNumberBtn(9)">
             9
           </button>
         </div>
         <div class="col-3">
-          <button id="multiply-btn" class="button--operation">
+          <button id="multiply-btn" class="button--operation" onclick="pressOperationBtn('x')">
             x
           </button>
         </div>
@@ -72,22 +69,22 @@
       
       <div class="row calculator-body__buttons-row">
         <div class="col-3">
-          <button id="four-btn" class="button--number">
+          <button id="four-btn" class="button--number" onclick="pressNumberBtn(4)">
             4
           </button>
         </div>
         <div class="col-3">
-          <button id="five-btn" class="button--number">
+          <button id="five-btn" class="button--number" onclick="pressNumberBtn(5)">
             5
           </button>
         </div>
         <div class="col-3">
-          <button id="six-btn" class="button--number">
+          <button id="six-btn" class="button--number" onclick="pressNumberBtn(6)">
             6
           </button>
         </div>
         <div class="col-3">
-          <button id="minus-btn" class="button--operation">
+          <button id="minus-btn" class="button--operation" onclick="pressOperationBtn('-')">
             -
           </button>
         </div>
@@ -95,22 +92,22 @@
       
       <div class="row calculator-body__buttons-row">
         <div class="col-3">
-          <button id="one-btn" class="button--number">
+          <button id="one-btn" class="button--number" onclick="pressNumberBtn(1)">
             1
           </button>
         </div>
         <div class="col-3">
-          <button id="two-btn" class="button--number">
+          <button id="two-btn" class="button--number" onclick="pressNumberBtn(2)">
             2
           </button>
         </div>
         <div class="col-3">
-          <button id="three-btn" class="button--number">
+          <button id="three-btn" class="button--number" onclick="pressNumberBtn(3)">
             3
           </button>
         </div>
         <div class="col-3">
-          <button id="plus-btn" class="button--operation">
+          <button id="plus-btn" class="button--operation" onclick="pressOperationBtn('+')">
             +
           </button>
         </div>
@@ -118,17 +115,17 @@
       
       <div class="row calculator-body__buttons-row">
         <div class="col-4">
-          <button id="zero-btn" class="button--zero">
+          <button id="zero-btn" class="button--zero" onclick="pressNumberBtn(0)">
             0
           </button>
         </div>
         <div class="col-2">
-          <button id="comma-btn" class="button--point">
+          <button id="comma-btn" class="button--point" onclick="pressComaBtn()">
             ,
           </button>
         </div>
         <div class="col-6">
-          <button id="equal-btn" class="button--equal">
+          <button id="equal-btn" class="button--equal" onclick="pressEqualBtn()">
             =
           </button>
         </div>
