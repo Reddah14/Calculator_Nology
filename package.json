@@ -4,8 +4,13 @@
   "description": "A project where the goal is to build a calculator using HTML, CSS and JavaScript. Aiming to have a site which can accept inputs, do some calculations and give you the outputs. The inputs will be generated from users clicking on the calculator buttons.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "cypress:open": "cypress open"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,8 @@
   },
   "homepage": "https://github.com/Reddah14/Calculator_Nology#readme",
   "devDependencies": {
-    "cypress": "^8.4.1"
+    "babel-jest": "^27.2.2",
+    "cypress": "^8.4.1",
+    "jest": "^27.2.2"
   }
 }
